@@ -4,9 +4,41 @@
 /* and above unless overwritten below */
 
 body {
-  background: #fcc;
-} 
+  background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
+  height: 100%;
+  background-size: contain;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: red;
+  text-align: center;
+}
+
+li {
+  float: center;
+
+}
+
+li a {
+  display: grid;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+li h2 {
+  display: none;
+}
 
 
 /* TABLET STYLES */
@@ -14,10 +46,45 @@ body {
 @media screen and (min-width: 500px) {
 
   /* applies to screens wider than 499px */
-  
+
   body {
-    background: #cfc;
-  } 
+    background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
+    height: 100%;
+    background-size: cover;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .about {
+   float:right;
+   border-right: none;
+}
+li h2 {
+  display: none;
+}
 }
 
 
@@ -29,6 +96,63 @@ body {
   /* applies to screens wider than 999px */
 
   body {
-    background: #ccf;
-  } 
+  background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
+  height: 100%;
+  background-size: cover;
+}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: red;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  .about {
+   float:right;
+   border-right: none;
+  }
+.LFC {
+   display: flex;
+   text-align: center;
+   color: white;
+   padding-left: 120px;
+   border-radius:
+  }
+
+  .slider {
+  align-self: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .mySlides {
+    display:none;
+
+    width: 50%;
+    max-height: 500px;
+
+    border-style: solid;
+  }
+
 }
