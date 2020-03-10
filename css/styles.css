@@ -85,29 +85,7 @@ margin-bottom: 20px;
   border-style: solid;
   margin-bottom: 30px;
 }
-/*------------Footer css----------*/
-.footer
-{
-  margin-top: 200px;
 
-  background: black;
-  color: white;
-  border-top:3px solid darkred;
-}
-
-.footer .containerFooter p
-{
-  font-size: 25px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-.footer .containerFooter{
-text-align: center;
-}
-
-.footer a {
-color: white;
-}
 
 
 .astrodivider {
@@ -148,10 +126,7 @@ color: white;
     font-style:normal;
      color:red;
 }
-.newsimage{
-  width:30%;
-  margin-left: 20px;
-}
+
 
 .newscontainer{
   display: flex;
@@ -160,6 +135,92 @@ color: white;
 
 .newscontainer h2{
   margin-left: 30px;
+}
+
+/*------------Footer css----------*/
+.containerFooter
+{
+  margin-top: 80px;
+  background: black;
+  color: white;
+  border-top:3px solid darkred;
+  text-align: center;
+
+}
+
+.containerFooter p
+{
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.containerFooter a {
+color: white;
+}
+
+/*------------Standing Table css----------*/
+.ptable table{
+	margin: 30px auto;
+	border-style: solid;
+}
+
+.ptable{
+	margin: 0px 0% 30px 0%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+	background-color: black;
+	color: white;
+}
+
+.headin{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	margin: 30px;
+	display: block;
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: darkblue;
+}
+
+.pos{
+	text-align: center;
+}
+
+.pos td{
+	color: darkred;
+}
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: red;
+}
+
+.wpos:hover td{
+	color: #000000;
+}
+
+.pos:hover{
+	background-color: #ff7b21;
+}
+
+.pos:hover td{
+	color: #000000;
 }
 /* TABLET STYLES */
 
@@ -313,18 +374,38 @@ color: white;
      color:red;
 }
 
-.newsimage{
-  width:30%;
-  margin-left: 20px;
-}
-
 .newscontainer{
-  display: flex;
+
   margin-bottom: 30px;
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-style: solid 3px grey;
 }
 
-.newscontainer h2{
-  margin-left: 30px;
+.newscontainer img{
+  width:30%;
+  margin-left: 0;
+}
+
+.newscontainer img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.9s;
+}
+.newstext {
+  display: inline;
+}
+
+.newstext h2 {
+  color: red;
+}
+
+.newstext h3 {
+  text-shadow: 4px;
+  color: grey;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 /* DESKTOP STYLES */
 
@@ -335,7 +416,7 @@ color: white;
   body {
   background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
   height: 100%;
-  background-size: cover;
+
 }
 
 
@@ -413,34 +494,12 @@ color: white;
 
   .mySlides {
     display:none;
-    width: 60%;
+    width: 75%;
     max-height: 500px;
     border-style: solid;
     margin-bottom: 30px;
   }
-  /*------------Footer css----------*/
-  .footer
-  {
-    margin-top: 80px;
 
-    background: black;
-    color: white;
-    border-top:3px solid darkred;
-  }
-
-  .footer .containerFooter p
-  {
-    font-size: 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  .footer .containerFooter{
-  text-align: center;
-  }
-
-  .footer a {
-  color: white;
-  }
 
   .astrodivider {
     margin:64px auto;
@@ -481,17 +540,124 @@ color: white;
        color:red;
   }
 
-.newsimage{
-  width:30%;
-  margin-left: 20px;
-}
-
 .newscontainer{
-  display: flex;
+
   margin-bottom: 30px;
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-style: solid 3px grey;
 }
 
-.newscontainer h2{
-  margin-left: 30px;
+.newscontainer img{
+  width:30%;
+  margin-left: 0;
 }
+
+.newscontainer img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.9s;
+}
+.newstext {
+  display: inline;
+}
+
+.newstext h2 {
+  color: red;
+}
+
+.newstext h3 {
+  text-shadow: 4px;
+  color: grey;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*------------Footer css----------*/
+.containerFooter
+{
+  margin-top: 80px;
+  background: black;
+  color: white;
+  border-top:3px solid darkred;
+  text-align: center;
+
+}
+
+.containerFooter p
+{
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+.containerFooter a {
+color: white;
+}
+
+/*------------Standing Table css----------*/
+.ptable table{
+	margin: 30px auto;
+	border-style: solid;
+}
+
+.ptable{
+	margin: 0px 0% 30px 0%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+	background-color: black;
+	color: white;
+}
+
+.headin{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	margin: 30px;
+	display: block;
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: darkblue;
+}
+
+.pos{
+	text-align: center;
+}
+
+.pos td{
+	color: darkred;
+}
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: red;
+}
+
+.wpos:hover td{
+	color: #000000;
+}
+
+.pos:hover{
+	background-color: #ff7b21;
+}
+
+.pos:hover td{
+	color: #000000;
+}
+
+
 }
