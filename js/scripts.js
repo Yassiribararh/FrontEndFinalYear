@@ -1,7 +1,7 @@
 console.log("hello");
 
 
-
+// script for the slideshow
 var myIndex = 0;
 carousel();
 
@@ -14,5 +14,5 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 6000); // Change image every 2 seconds
 }
