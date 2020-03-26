@@ -58,6 +58,16 @@ li h2 {
   text-decoration-style: double;
 }
 
+.container .welcome {
+  border: 20px red;
+  border-style:outset;
+  background-color: white;
+  border-width: 100%;
+  border-radius: 50px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 
 .LFC {
  display: none;
@@ -163,8 +173,9 @@ color: white;
 
 /*------------Standing Table css----------*/
 .ptable table{
-	margin: 30px auto;
+	margin: 10px auto;
 	border-style: solid;
+  width: 90%;
 }
 
 .ptable{
@@ -257,6 +268,7 @@ table .col{
 
   /* Change the link color to #111 (black) on hover */
   li a:hover {
+    color: white;
     background-color: #111;
   }
 
@@ -285,6 +297,23 @@ li h2 {
   font-style: italic;
   text-align: center;
   text-decoration-style: double;
+}
+
+.container .welcome {
+  border: 20px red;
+  border-style:outset;
+  background-color: white;
+  border-width: 100%;
+  border-radius: 50px 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container .memories {
+  margin-top: -50px;
+  border-style: solid;
+  background-color: white;
+  margin-bottom: 50px;
 }
 
 .container .homenews {
@@ -408,6 +437,16 @@ color: white;
   margin-left: 20px;
   margin-right: 20px;
 }
+.newstext .readmore {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.readmore:hover {
+  color: black;
+}
 
 .text-slider {
 
@@ -433,6 +472,40 @@ margin-top: 20px;
 width: 90%;
 max-height:200px;
 margin-left: 20px;
+}
+
+/*Styles for previous and next buttons*/
+.prevnext{
+text-align: center;
+margin-top: -40px;
+margin-bottom: 30px;
+
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+}
+
+.next {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.round {
+  border-radius: 50%;
 }
 
 
@@ -494,7 +567,14 @@ margin-left: 20px;
     font-style: italic;
     text-align: center;
     text-decoration-style: double;
+    margin-top: 10px;
+  }
 
+  .container .memories {
+    margin-top: -20px;
+    border-style: none none solid none;;
+    background-color: white;
+    margin-bottom: 30px;
   }
 
 
@@ -524,12 +604,12 @@ margin-left: 20px;
 
   .mySlides {
     display:none;
-    width: 85%;
-    border-style: solid;
-    margin-bottom: 30px;
+    width: 100%;
+    border-style: none;
+    margin-bottom: 0;
     background-color: white;
-
   }
+
 
   .mySlides img {
 
@@ -620,6 +700,17 @@ margin-left: 20px;
 
 }
 
+.newstext .readmore {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  color: lightgrey;
+}
+
+.readmore:hover {
+  color: black;
+}
+
 .text-slider {
 
 align-self: center;
@@ -628,6 +719,7 @@ align-items: center;
 justify-content: center;
 margin-top: 10px;
 margin-bottom: 20px;
+
 }
 
 .text-slider .mySlides {
@@ -635,12 +727,48 @@ padding-bottom: 50px;
 width: 90%;
 margin-bottom: 30px;
 border-style: dashed;
+
 }
+
 
 .text-slider .mySlides img {
 margin-top: 20px;
+margin-left: 35px;
 }
 
+/*Styles for previous and next buttons*/
+.prevnext{
+text-align: center;
+margin-top: -20px;
+margin-bottom: 30px;
+
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  cursor: pointer;
+}
+
+.next {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 
 /*------------Footer css----------*/
