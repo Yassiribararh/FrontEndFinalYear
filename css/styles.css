@@ -4,7 +4,7 @@
 /* and above unless overwritten below */
 
 body {
-  background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
+  background-image: url("../img/liverpool.jpg");
   height: 100%;
   background-size: contain;
 }
@@ -182,23 +182,34 @@ li h2 {
   color: grey;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 90%;
 }
 .newstext .readmore {
-  float:inherit;
-  margin-right: 10px;
   cursor: pointer;
   color: white;
   text-align: center;
   background-color: red;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
 }
 
-.readmore:hover {
+.newstext .readmore a{
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  width: inherit;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+}
+
+.readmore a:hover {
   color: white;
   background-color: black;
+  transition: 2s;
 }
+
+
 
 /*------------text slider css----------*/
 
@@ -212,7 +223,7 @@ li h2 {
 }
 
 .text-slider .mySlides {
-  padding-bottom: 300px;
+  padding-bottom: 600px;
   width: 93%;
   margin-bottom: 30px;
   border-style: dashed;
@@ -226,7 +237,11 @@ li h2 {
   margin-left: 20px;
 }
 
-
+.newstextvideo {
+  width: 90%;
+  max-height: 90%;
+  margin-left: 20px;
+}
 /*------------Footer css----------*/
 
 .containerFooter {
@@ -261,6 +276,14 @@ li h2 {
 	margin: 0px 0% 30px 0%;
 }
 
+.fixtures-table{
+  background-color: white;
+	margin: 0 auto;
+	border-style: solid;
+  width: 95%;
+  margin-bottom: 30px;
+}
+
 th, td {
   padding: 10px;
 }
@@ -292,6 +315,10 @@ th{
 
 .pos td{
 	color: darkred;
+}
+
+.pos td img{
+	width: 80%;
 }
 
 table .col{
@@ -357,7 +384,7 @@ a:hover {
   /* applies to screens wider than 499px */
 
   body {
-    background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
+    background-image: url("../img/liverpool.jpg");
     height: 100%;
     background-size: cover;
   }
@@ -565,6 +592,7 @@ a:hover {
   .readmore:hover {
     color: white;;
     background-color: black;
+    transition: 2s;
   }
 
 
@@ -580,7 +608,7 @@ a:hover {
   }
 
   .text-slider .mySlides {
-    padding-bottom: 300px;
+    padding-bottom: 600px;
     width: 95%;
     margin-bottom: 30px;
     border-style: dashed;
@@ -592,6 +620,12 @@ a:hover {
     width: 90%;
     max-height:200px;
     margin-left: 20px;
+  }
+
+  .newstextvideo {
+    width: 90%;
+    height: 300px;
+    margin-left: 30px;
   }
 
   /*Styles for previous and next buttons*/
@@ -627,6 +661,20 @@ a:hover {
   .round {
     border-radius: 50%;
   }
+
+  /*--------fixtures table css----------*/
+
+  .fixtures-table{
+    background-color: white;
+  	margin: 0 auto;
+  	border-style: solid;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  .pos td img{
+  	width: 50%;
+  }
+
 }
 
 
@@ -637,7 +685,7 @@ a:hover {
   /* applies to screens wider than 999px */
 
   body {
-    background-image: url("https://cdn.wallpapersafari.com/41/52/EzRYWw.jpg");
+    background-image: url("../img/liverpool.jpg");
     height: 100%;
 
   }
@@ -815,15 +863,15 @@ a:hover {
   .newstext h2 {
     color: red;
     text-align: left;
-    margin-left: 20px;;
-
+    margin-left: 40px;
   }
 
   .newstext h3 {
     text-shadow: 4px;
     color: grey;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-right: 20px;
+    text-align:inherit;
   }
 
   .newstext .readmore {
@@ -836,7 +884,9 @@ a:hover {
 
   .readmore:hover {
     color: white;
+    transition: 2s;
   }
+
 
 /*------------NewsPage slideshow css----------*/
 
@@ -850,7 +900,7 @@ a:hover {
   }
 
   .text-slider .mySlides {
-    padding-bottom: 50px;
+    padding-bottom: 600px;
     width: 90%;
     margin-bottom: 30px;
     border-style: dashed;
@@ -861,6 +911,11 @@ a:hover {
     margin-left: 35px;
   }
 
+  .newstextvideo {
+    width: 90%;
+    height: 400px;
+    margin-left: 40px;
+  }
   /*Styles for previous and next buttons*/
 
   .prevnext{
@@ -986,4 +1041,26 @@ a:hover {
   	color: #000000;
   }
 
+  /*--------fixtures table css----------*/
+
+  .fixtures-table{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-style: solid;
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .pos td img{
+    width: 40%;
+    height: 80px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .fixtures-table tr {
+    color: white ;
+  }
 }
