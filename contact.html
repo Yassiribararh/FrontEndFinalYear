@@ -25,20 +25,32 @@
   <section class="container">
     <h2 class="welcome">Contact us.</h2>
     <form class="contactform">
-    <label for="firstname">First Name</label>
-    <input type="text" id="firstname" name="firstname" placeholder="Your name..">
+      <label for="firstname">First Name</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Your name..">
 
-    <label for="lastname">Last Name</label>
-    <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Your last name..">
 
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Your email..">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
-  </form>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <div class="contactform">
+      <h2 class= "">Reviews section:</h2>
+      <input placeholder="Leave us a review" id="newItem">
+      <button id="addBtn">add</button>
+      <h2 class= "">Reviews from other users:</h2>
+      <ul id="reviews" class="information"></ul>
+
+    </div>
+
   </section>
 
   <div class="containerFooter">
@@ -46,7 +58,7 @@
     <p>Contact information: <a href="mailto:P16224469@my365.dmu.ac.uk">P16224469@MY365.dmu.ac.uk</a>.</p>
   </div>
 
-  <script src="js/scripts.js"></script>
+  <script src="js/reviews.js"></script>
 
 </body>
 </html>
