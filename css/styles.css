@@ -18,9 +18,7 @@ ul {
   text-align: center;
 }
 
-li {
-  float: center;
-}
+
 
 li a {
   display: grid;
@@ -39,6 +37,10 @@ li h2 {
   display: none;
 }
 
+.logo {
+  width:30%;
+}
+
 /*------------container css----------*/
 .container{
   display: block;
@@ -48,6 +50,7 @@ li h2 {
   background: lightgrey;
   border: 3px solid black;
   margin-top: 20px;
+  margin-bottom: 50px;
 
 }
 
@@ -61,7 +64,6 @@ li h2 {
   border: 10px red;
   border-style:outset;
   background-color: red;
-  border-width: 100%;
   border-radius: 50px 20px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -69,10 +71,6 @@ li h2 {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.LFC {
-  display: none;
 }
 
 .container .homenews {
@@ -85,6 +83,12 @@ li h2 {
   border-style: solid;
   background-color: white;
   margin-bottom: 50px;
+}
+
+.container hr {
+  padding: 20px;
+  background-color: red;
+  margin-bottom: 30px;
 }
 
 /*------------slideshow css----------*/
@@ -153,8 +157,8 @@ li h2 {
   margin-bottom: 30px;
   background-color: white;
   margin-left: 10px;
-  margin-right: auto
-  border-style: solid 3px grey;
+  margin-right: auto;
+  border: solid 3px grey;
 
 }
 
@@ -179,7 +183,6 @@ li h2 {
 }
 
 .newstext h3 {
-  text-shadow: 4px;
   color: grey;
   margin-left: 20px;
   margin-right: 20px;
@@ -246,27 +249,26 @@ li h2 {
 /*------------Footer css----------*/
 
 .containerFooter {
-  margin-top: 80px;
+  margin-top: 800px;
   background: black;
   color: white;
   border-top:3px solid darkred;
-  text-align: center;
+  text-align: right;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -10px;
 }
 
-.containerFooter p
-{
-  font-size: 25px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-.containerFooter a {
-  color: white;
+.containerFooter p {
+  font-size: 13px;
+  font-style: italic;
+  margin-right: 10px;
 }
 
 /*------------Standing Table css----------*/
 
-.ptable table{
+.ptable table {
   background-color: white;
 	margin: 0 auto;
 	border-style: solid;
@@ -331,15 +333,15 @@ table .col{
 }
 
 .wpos:hover td{
-	color: #000000;
+	color: white;
 }
 
 .pos:hover{
-	background-color: #ff7b21;
+	background-color: red;
 }
 
 .pos:hover td{
-	color: #000000;
+	color: white;
 }
 
 
@@ -456,9 +458,42 @@ a:hover {
   height: 300px;
 }
 
+/*review section css*/
+.reviews{
+  display: block;
+  background-color: white;
+  margin-bottom: 20px;
+}
 
+.reviews li {
+  color: black;
+  text-decoration: underline;
+  padding: 20px;
+  text-align: left;
+}
 
+.reviews li:hover{
+  color: white;
+  background-color: red;
+}
 
+.reviews li button{
+  float: right;
+}
+
+.reviews-text {
+  width: 80%;
+  height: 80px;
+}
+
+.addBtn {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 /* TABLET STYLES */
 
 @media screen and (min-width: 500px) {
@@ -483,14 +518,17 @@ a:hover {
 
   li {
     float: left;
+
   }
 
   li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 20px;
     text-decoration: none;
+    margin-top: -20px;
+
   }
 
   li a:hover {
@@ -501,10 +539,18 @@ a:hover {
   .about {
    float:right;
    border-right: none;
+
   }
 
   li h2 {
    display: none;
+ }
+
+ li .logo {
+   align-self: center;
+   width:5%;
+   margin-bottom: -40px;
+   margin-right: -150px;
  }
 
  /*------------container css----------*/
@@ -530,7 +576,6 @@ a:hover {
    border: 10px red;
    border-style:outset;
    background-color: red;
-   border-width: 100%;
    border-radius: 50px 20px;
    padding-top: 30px;
    padding-bottom: 30px;
@@ -550,9 +595,7 @@ a:hover {
    text-align: left;
    margin-left: 20px;
  }
- .LFC {
-   display: none;
- }
+
 
  /*------------slideshow css----------*/
 
@@ -643,8 +686,8 @@ a:hover {
   .newscontainer{
     margin-bottom: 40px;
     background-color: white;
-    margin-left: 20px;
-    border-style: solid 3px grey;
+    margin:20px auto;
+
   }
 
   .newscontainer img{
@@ -666,7 +709,6 @@ a:hover {
   }
 
   .newstext h3 {
-    text-shadow: 4px;
     color: grey;
     margin-left: 20px;
     margin-right: 20px;
@@ -767,7 +809,15 @@ a:hover {
     margin-bottom: 30px;
   }
 
+  /*review section css*/
 
+  .reviews li {
+    width: 100%;
+  }
+
+  .reviews button{
+    margin-right: 30px;
+  }
 }
 
 
@@ -790,7 +840,6 @@ a:hover {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: red;
   }
 
   li {
@@ -812,6 +861,10 @@ a:hover {
   .about {
     float:right;
     border-right: none;
+  }
+
+  li .logo {
+    width:3%;
   }
 
   /*------------container css----------*/
@@ -840,14 +893,6 @@ a:hover {
     margin-bottom: 30px;
   }
 
-  .LFC {
-   display: flex;
-   text-align: center;
-   color: gold;
-   padding-left: 30px;
-   border-radius:
-  }
-
   .container .homenews {
     text-align: center;
 
@@ -856,6 +901,20 @@ a:hover {
   .container .welcome {
     width: 85%;
     margin-left: 70px;
+    animation-name: movingBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; /* infinite */
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+
+  /*Animation for the welcome header*/
+  @keyframes movingBox {
+    0%   { left: 0px; top: 0px; }
+    25%  { left: calc(100% - 200px); top: 0px; }
+    50%  { left: calc(100% - 200px); top: calc(100% - 200px); border-radius: 50%; }
+    75%  { left: 0; top: calc(100% - 200px); }
+    100% { left: 0px; top: 0px; }
   }
 
 /*------------Home page Slideshow css----------*/
@@ -876,6 +935,8 @@ a:hover {
     margin-bottom: 0;
     background-color: white;
   }
+
+
 
   .mySlides img {
     width: 90%;
@@ -934,9 +995,7 @@ a:hover {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    border-style: solid 3px grey;
     width:90%;
-
   }
 
   .newscontainer img{
@@ -961,15 +1020,13 @@ a:hover {
   }
 
   .newstext h3 {
-    text-shadow: 4px;
     color: grey;
     margin-left: 40px;
     margin-right: 20px;
-    text-align:inherit;
+    text-align: inherit;
   }
 
   .newstext .readmore {
-    float: center;
     cursor: pointer;
     color: lightgrey;
     margin-bottom: 0;
@@ -1020,6 +1077,7 @@ a:hover {
     margin-top: -20px;
     margin-bottom: 30px;
   }
+
   a {
     text-decoration: none;
     display: inline-block;
@@ -1052,23 +1110,21 @@ a:hover {
 
   .containerFooter
   {
-    margin-top: 80px;
     background: black;
     color: white;
     border-top:3px solid darkred;
     text-align: center;
+    padding-right: 10px;
   }
 
   .containerFooter p
   {
-    font-size: 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
+    float: right;
+    font-size: 13px;
+    margin-right: 10px;
   }
 
-  .containerFooter a {
-    color: white;
-  }
+
 
   /*------------Standing Table css----------*/
 
@@ -1080,6 +1136,7 @@ a:hover {
   	border-style: solid;
     width: 90%;
   }
+
 
   .ptable{
   	margin: 0px 0% 30px 0%;
@@ -1127,7 +1184,8 @@ a:hover {
   }
 
   .wpos:hover td{
-  	color: #000000;
+    color: white;
+    -webkit-transform: scale(2.2);
   }
 
   .pos:hover{
@@ -1135,7 +1193,8 @@ a:hover {
   }
 
   .pos:hover td{
-  	color: #000000;
+  	color: white;
+    -webkit-transform: scale(2.2);
   }
 
   /*--------fixtures table css----------*/
@@ -1159,6 +1218,16 @@ a:hover {
 
   .fixtures-table tr {
     color: white ;
+  }
+
+  .match {
+    width:30%;
+  }
+
+  .fixtures-table .pos:hover td{
+    color: white;
+    -webkit-transform: scale(1.0);
+    background-color: lightgrey;
   }
 
   /*------------contact form css----------*/
@@ -1204,4 +1273,17 @@ a:hover {
     color: white;
     background-color: red;
   }
+
+  /*review section css*/
+  .reviews{
+    display: grid;
+    background-color: white;
+  }
+
+  .reviews li{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
 }

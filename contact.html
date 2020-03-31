@@ -9,16 +9,10 @@
 <body>
   <header>
     <ul>
+      <li><img alt="" class="logo" src="img/logo.png"></li>
       <li><a href="index.html">Home</a></li>
       <li><a href="news.html">News</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><span class= "LFC">&#11088;</span></li>
-      <li><span class= "LFC">&#11088;</span></li>
-      <li><span class= "LFC">&#11088;</span></li>
-      <li><h2 class= "LFC">Liverpool Fc Fans Home Page</h2></li>
-      <li><span class= "LFC">&#11088;</span></li>
-      <li><span class= "LFC">&#11088;</span></li>
-      <li><span class= "LFC">&#11088;</span></li>
+      <li><a href="contact.html">Contact & Reviews</a></li>
       <li class="about"><a  href="about.html">About</a></li>
     </ul>
   </header>
@@ -37,25 +31,21 @@
       <label for="subject">Subject</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-      <input type="submit" value="Submit">
+      <input type="submit" id="submit" value="Submit">
     </form>
-
     <hr>
-
     <div class="contactform">
       <h2 class= "">Reviews section:</h2>
-      <input placeholder="Leave us a review" id="newItem">
-      <button id="addBtn">add</button>
-      <h2 class= "">Reviews from other users:</h2>
-      <ul id="reviews" class="information"></ul>
-
+      <input placeholder=" Leave us a review..." id="newItem" class="reviews-text">
+      <button id="addBtn" class="addBtn">Add</button>
+      <h2 class= "">Reviews:</h2>
+      <ul id="reviews" class="reviews"></ul>
+      <button id="clearBtn" class="addBtn">clear</button>
     </div>
-
   </section>
 
   <div class="containerFooter">
-    <p>Created by: @Yassir Ibararh.</p>
-    <p>Contact information: <a href="mailto:P16224469@my365.dmu.ac.uk">P16224469@MY365.dmu.ac.uk</a>.</p>
+    <p>@Yassir Ibararh</p>
   </div>
 
   <script src="js/reviews.js"></script>
