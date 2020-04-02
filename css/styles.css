@@ -1223,7 +1223,7 @@ a:hover {
   }
 
   .fixtures-table .pos:hover td{
-    color: white;
+    color: black;
     -webkit-transform: scale(1.0);
     background-color: lightgrey;
   }
