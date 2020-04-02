@@ -18,8 +18,6 @@ ul {
   text-align: center;
 }
 
-
-
 li a {
   display: grid;
   color: white;
@@ -31,10 +29,6 @@ li a {
 li a:hover {
   background-color: #111;
   color: white;
-}
-
-li h2 {
-  display: none;
 }
 
 .logo {
@@ -287,6 +281,7 @@ li h2 {
   margin-bottom: 30px;
 }
 
+
 th, td {
   padding: 10px;
 }
@@ -321,7 +316,7 @@ th{
 }
 
 .pos td img{
-	width: 80%;
+	width: 100%;
 }
 
 table .col{
@@ -528,7 +523,6 @@ a:hover {
     padding: 20px 20px;
     text-decoration: none;
     margin-top: -20px;
-
   }
 
   li a:hover {
@@ -542,15 +536,10 @@ a:hover {
 
   }
 
-  li h2 {
-   display: none;
- }
-
- li .logo {
+  .logo {
    align-self: center;
    width:5%;
    margin-bottom: -40px;
-   margin-right: -150px;
  }
 
  /*------------container css----------*/
@@ -800,6 +789,10 @@ a:hover {
   	width: 50%;
   }
 
+  .match {
+    width:30%;
+  }
+
   /*------------contact form css----------*/
 
   .contactform {
@@ -818,6 +811,11 @@ a:hover {
   .reviews button{
     margin-right: 30px;
   }
+
+/*about css*/
+  .first{
+    margin-top: 15px;
+  }
 }
 
 
@@ -830,15 +828,12 @@ a:hover {
   body {
     background-image: url("../img/liverpool.jpg");
     height: 100%;
-
   }
 
   /*------------Top header css----------*/
 
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
   }
 
@@ -847,11 +842,11 @@ a:hover {
   }
 
   li a {
-    display: block;
     color: white;
     text-align: center;
-    padding: 25px 16px;
+    padding: 25px 25px;
     text-decoration: none;
+    margin-top: -22px;
   }
 
   li a:hover {
@@ -864,8 +859,11 @@ a:hover {
   }
 
   li .logo {
-    width:3%;
+    width: 4%;
+    margin-bottom: -50px;
+    margin-left: 90px;
   }
+
 
   /*------------container css----------*/
 
@@ -1249,12 +1247,12 @@ a:hover {
   }
 
   .location-image img{
-    max-width:500px;
-    height:100%;;
+    width:570px;
+    height: 600px;
   }
 
   .information-container{
-    width:50%;
+    width:70%;
   }
 
   .information {
@@ -1265,8 +1263,11 @@ a:hover {
 
   .information li a{
     color: black;
-    cursor: auto;
     text-decoration: underline;
+  }
+
+  .first{
+    margin-top: 15px;
   }
 
   .information li a:hover{
