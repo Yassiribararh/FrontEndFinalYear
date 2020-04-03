@@ -533,13 +533,14 @@ a:hover {
   .about {
    float:right;
    border-right: none;
-
   }
 
   .logo {
    align-self: center;
-   width:5%;
+   width:7%;
    margin-bottom: -40px;
+   padding-left: 200px;
+   height: 50px;
  }
 
  /*------------container css----------*/
@@ -861,7 +862,8 @@ a:hover {
   li .logo {
     width: 4%;
     margin-bottom: -50px;
-    margin-left: 90px;
+    margin-left: -150px;
+    height: 65px;
   }
 
 
