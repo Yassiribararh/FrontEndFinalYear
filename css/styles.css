@@ -1129,7 +1129,7 @@ a:hover {
   /*------------Standing Table css----------*/
 
   .ptable table{
-    background-image: url(../img/PremierLogo.png);
+    background-color: white;
     background-repeat: no-repeat;
     background-size: contain;
   	margin: 0 auto;

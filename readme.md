@@ -1,75 +1,28 @@
-# CTEC3905 Assignment
+# CTEC3905 Assignment Overview
 
-This is very basic boilerplate code for you to get started with.
+This is a Liverpool fan website. the system contains 4 html pages:
 
-## index.html
+- Home page (Index):
+                   - Slideshow
+                   - table
+                   - News Containers
+- News Page :      
+                   - Text Slideshow
+                   - 2 tables
+- Contact Page:    
+                   - 2 forms
 
-The `index.html` file includes a basic template with a link to the `css/styles.css` file and a script tag after the main content which links to the `js/scripts.js` file.
+- About Page:      
+                   - 3 Containers of information
 
-```
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P-Number</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  
-  <h1>Hello World</h1>
+# CTEC3905 Assignment References
 
-  <script src="js/scripts.js"></script>
-</body>
-</html>
-```
+- Youtube Code can be take from [here]( https://www.w3schools.com/html/html_youtube.asp)
+- CTEC3905 Labs and lectures.
+- Google.com / images.
 
-## css/styles.css
+# CTEC3905 Assignment folders
 
-The `css/styles.css` file contains a basic starting template for a responsive page.
-
-```
-/* MOBILE AND GLOBAL STYLES */
-
-/* applies to screens smaller than 500px (first breakpoint) */
-/* and above unless overwritten below */
-
-body {
-  background: #fcc;
-} 
-
-
-
-/* TABLET STYLES */
-
-@media screen and (min-width: 500px) {
-
-  /* applies to screens wider than 499px */
-  
-  body {
-    background: #cfc;
-  } 
-}
-
-
-
-/* DESKTOP STYLES */
-
-@media screen and (min-width: 1000px) {
-
-  /* applies to screens wider than 999px */
-
-  body {
-    background: #ccf;
-  } 
-}
-
-```
-
-## js/scripts.js
-
-The `js/scripts.js` file contains a simple console.log statement to confirm that it is being executed.
-
-```
-console.log("hello");
-```
+- Images [here](https://github.com/ctec3905students/2019-20-Yassiribararh/img)
+- script [here](https://github.com/ctec3905students/2019-20-Yassiribararh/js)
+- github repository [here](https://github.com/ctec3905students/2019-20-Yassiribararh)  
